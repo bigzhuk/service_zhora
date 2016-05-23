@@ -18,8 +18,8 @@
 		<tbody>
 			<tr>
 				<td id="phones">
-					<div style="color: white !important">+7(495)409-48-78</div>
-					<div style="color: white !important">+7(925)898-43-57</div>
+					<div style="color: white !important"><?=App::$phones[0]?></div>
+					<div style="color: white !important"><?=App::$phones[1]?></div>
 					<a id="show_recall_btn" onclick="show_recall();">Обратный звонок</a>
 					<!-- @TODO Указать время, когда принимаются звонки! Сделать форму - заказ обратного звонка. Как на dadget.ru. -->
 					<!-- (Использовать inputmask для номера.) -->
@@ -55,28 +55,6 @@
 				<div class="menu_section">
 					<a class="main_menu_link" href="/price_list">Прайс-лист</a>
 				</div>
-
-				<div class="menu_section">
-					<a class="main_menu_link" href="/photo">Галерея</a>
-				</div>
-
-				<div class="menu_section">
-					<a class="main_menu_link" href="/technology">Технология</a>
-				</div>
-
-				<!-- <div class="menu_section">
-					<a class="main_menu_link" href="work">Наши работы</a>
-					<ul>
-						<li><a class="main_menu_link" href="/work/asfaltirovanie">Lorem</a></li>
-						<li><a class="main_menu_link" href="/work/blasgoustroistvo">Ipsum</a></li>
-						<li><a class="main_menu_link" href="/work/zemlyanie_raboti">Dolor</a></li>
-						<li><a class="main_menu_link" href="/work/arhitekturnie_formi">Sit amet</a></li>
-					</ul>
-				</div>
-
-				<div class="menu_section">
-					<a class="main_menu_link" href="/video">Видео</a>
-				</div> -->
 
 				<div class="menu_section">
 					<a class="main_menu_link" href="/contacts">Контакты</a>
