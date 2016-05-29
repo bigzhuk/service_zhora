@@ -1,6 +1,6 @@
 <?php
 class App {
-	const COMPANY_NAME = 'Супер-Сервис';
+	const COMPANY_NAME = 'АвтоМоторс-50';
 	const DEFAULT_TITLE = 'Атосервис г. Пушкино';
 
 	public static $phones = [

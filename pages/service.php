@@ -15,28 +15,28 @@
 			<ul id="services">
 				
 				<a href="service/car_repair">
-					<div class="image" style="background-image: url('images/menu_item_06.jpg');"></div>
+					<div class="image" style="background-image: url('images/menu_item_01.png');"></div>
 					<div class="text"><?= APP::$services['car_repair']?></div>
 				</a>
 
 				<a href="service/engine_repair">
-					<div class="image" style="background-image: url('images/menu_item_01.jpg');"></div>
+					<div class="image" style="background-image: url('images/menu_item_02.png');"></div>
 					<div class="text"><?= APP::$services['engine_repair']?></div>
 				</a>
 				<a href="service/gear_repair">
-					<div class="image" style="background-image: url('images/menu_item_08.jpg');"></div>
+					<div class="image" style="background-image: url('images/menu_item_03.png');"></div>
 					<div class="text"><?=APP::$services['gear_repair']?></div>
 				</a>
 				<a href="service/electrics_repair">
-					<div class="image" style="background-image: url('images/menu_item_02.jpg');"></div>
+					<div class="image" style="background-image: url('images/menu_item_04.png');"></div>
 					<div class="text"><?=APP::$services['electrics_repair']?></div>
 				</a>
 				<a href="service/tyres_service">
-					<div class="image" style="background-image: url('images/menu_item_03.jpg');"></div>
+					<div class="image" style="background-image: url('images/menu_item_05.png');"></div>
 					<div class="text"><?=APP::$services['tyres_service']?></div>
 				</a>
 				<a href="service/to_contracts">
-					<div class="image" style="background-image: url('images/menu_item_04.jpg');"></div>
+					<div class="image" style="background-image: url('images/menu_item_06.png');"></div>
 					<div class="text"><?=APP::$services['to_contracts']?></div>
 				</a>
 			</ul>
