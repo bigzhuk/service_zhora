@@ -12,8 +12,8 @@
 	function recall(){
 		$phone = $_POST['phone'];
 		$name = $_POST['name'];
-		$mailto = 'stdorog@mail.ru';
-		$subject = 'Обратный звонок asfalt-stroy-dor.ru';
+		$mailto =  App::COMPANY_EMAIL;
+		$subject = 'Обратный звонок';
 		$message = 'Телефон: '.$phone.' Имя: '.$name;
 		if (sendMail($mailto, $subject, $message)){
 			$result['success'] = 'sendMail';
