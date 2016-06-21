@@ -15,7 +15,7 @@
 		<li><?= App::$services['engine_repair']?></li>
 		<li><?= App::$services['electrics_repair']?></li>
 		<li><?= App::$services['tyres_service']?></li>
-		<li><?= App::$services['to_contracts']?></li>
+		<li><?= App::$services['evacuator']?></li>
 		<li><?= App::$services['gear_repair']?></li>
 	</ul>
 </p>

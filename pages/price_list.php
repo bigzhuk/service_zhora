@@ -1,5 +1,26 @@
-<h1>Прайс лист</h1>
+<script>
+	function scrollToId(element_id) {
+		$(document).ready(function () {
+			if(element_id == null) {
+				var url = document.createElement('a');
+				url.href = window.location;
+				var scroll_id = url.hash;
+			} else {
+				var scroll_id = '#' + element_id
+			}
+			destination = $(scroll_id).offset().top - 60;
+			$("body:not(:animated)").animate({scrollTop: destination}, 2000);
+			$("html").animate({scrollTop: destination}, 2000);
+			return false;
+		});
+	}
+	scrollToId();
+</script>
+<h1>Прайс-лист</h1>
 <div class="container">
+	<p>В этом разделе вы сможете ознакомиться с ценами на любые виды ремонта и сервисных работ в нашем автосервисе.</p>
+	<p><a href="service/tyres_service">Цены на шиномонтаж</a>, а также <a href="service/tyres_service">цены на услуги эвакуатара и грузоперевозки</a>
+	представлены на соотвествующих страницах сайта.</p>
 	<div id="pricelist_wrapper">
 		<table id="pricelist">
 			<thead>
@@ -8,11 +29,10 @@
 				<td>Отечественные автомобили</td>
 				<td>Импортные автомобили</td>
 				<td>Внедорожники, микроавтобусы</td>
-				<a name="<?= App::$services['car_repair']?>"></a>
 			</tr>
 			</thead>
 			<tbody>
-			<tr><td colspan="100%" class="subhead"><?= App::$services['car_repair']?></td></tr>
+			<tr><td id="car_repair" colspan="100%" class="subhead"><?= App::$services['car_repair']?></td></tr>
 			<tr>
 				<td>
 					Покарска детали
@@ -41,7 +61,7 @@
 					100
 				</td>
 			</tr>
-			<tr><td colspan="100%" class="subhead">Ремонт двигателя</td></tr>
+			<tr><td id="engine_repair" colspan="100%" class="subhead"><?= App::$services['engine_repair']?></td></tr>
 			<tr>
 				<td>
 					Компьютерная
@@ -871,7 +891,7 @@
 					1500
 				</td>
 			</tr>
-			<tr><td colspan="100%" class="subhead">Ремонт коробки передач и сцепления</td></tr>
+			<tr><td id="gear_repair" colspan="100%" class="subhead"><?= App::$services['gear_repair']?></td></tr>
 			<tr>
 					<td>
 						Наименование
@@ -1211,6 +1231,35 @@
 					</td>
 				</tr>
 
+			<tr><td id="electrics_repair" colspan="100%" class="subhead"><?= App::$services['electrics_repair']?></td></tr>
+			<tr>
+				<td>
+					Покарска детали
+				</td>
+				<td>
+					100
+				</td>
+				<td>
+					100
+				</td>
+				<td>
+					100
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Покарска детали
+				</td>
+				<td>
+					100
+				</td>
+				<td>
+					100
+				</td>
+				<td>
+					100
+				</td>
+			</tr>
 
 				<tr><td colspan="100%" class="subhead">Ремонт рулевого управления</td></tr>
 				</tr>

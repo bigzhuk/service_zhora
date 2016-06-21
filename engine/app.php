@@ -13,7 +13,7 @@ class App {
         'gear_repair' =>  'Ремонт трансмиссии',
         'electrics_repair' => 'Ремонт электрики',
         'tyres_service' => 'Шиномонтаж',
-        'to_contracts' => 'Эвакуатор, грузоперевозки, аренда автобуса',
+        'evacuator' => 'Эвакуатор, грузоперевозки, аренда автобуса',
     ];
     public static  $pages = [
         '/about' => 'О компании',
@@ -25,7 +25,7 @@ class App {
         '/service/gear_repair' => 'Ремонт трансмиссии',
         '/service/electrics_repair' => 'Ремонт электрики',
         '/service/tyres_service' => 'Шиномонтаж',
-        '/service/to_contracts' => 'Эвакуатор, грузоперевозки, аренда автобуса',
+        '/service/evacuator' => 'Эвакуатор, грузоперевозки, аренда автобуса',
 
     ];
 

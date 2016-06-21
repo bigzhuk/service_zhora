@@ -35,9 +35,9 @@
 					<div class="image" style="background-image: url('images/menu_item_05.png');"></div>
 					<div class="text"><?=APP::$services['tyres_service']?></div>
 				</a>
-				<a href="service/to_contracts">
+				<a href="service/evacuator">
 					<div class="image" style="background-image: url('images/menu_item_06.png');"></div>
-					<div class="text"><?=APP::$services['to_contracts']?></div>
+					<div class="text"><?=APP::$services['evacuator']?></div>
 				</a>
 			</ul>
 		</div>
