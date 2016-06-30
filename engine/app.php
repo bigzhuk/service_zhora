@@ -18,14 +18,14 @@ class App {
     public static  $pages = [
         '/about' => 'О компании',
         '/contacts' => 'Контакты',
-        '/price_list' => 'Цены',
-        '/service' => 'Услуги',
-        '/service/car_repair' => 'Кузовной ремонт',
-        '/service/engine_repair' => 'Ремонт двигателя',
-        '/service/gear_repair' => 'Ремонт трансмиссии',
-        '/service/electrics_repair' => 'Ремонт электрики',
-        '/service/tyres_service' => 'Шиномонтаж',
-        '/service/evacuator' => 'Эвакуатор, грузоперевозки, аренда автобуса',
+        '/price_list' => 'Цены на услуги автосервиса в Пушкино',
+        '/service' => 'Услуги автосервиса в Пушкино',
+        '/service/car_repair' => 'Кузовной ремонт в Пушкино',
+        '/service/engine_repair' => 'Ремонт двигателя в Пушкино',
+        '/service/gear_repair' => 'Ремонт трансмиссии в Пушкино',
+        '/service/electrics_repair' => 'Ремонт электрики в Пушкино',
+        '/service/tyres_service' => 'Шиномонтаж в Пушкино',
+        '/service/evacuator' => 'Эвакуатор, грузоперевозки, аренда автобуса в Пушкино',
 
     ];
 

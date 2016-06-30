@@ -1,4 +1,4 @@
-<h1><?= App::$services['engine_repair']?></h1>
+<h1><?= App::$services['engine_repair']?> в Пушкино</h1>
 
 <div class="container">
 	<p><img src="../../images/menu_item_02.png" class="left">
