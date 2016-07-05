@@ -5,7 +5,7 @@ class App {
     const COMPANY_EMAIL = 'zhora.cejba@mail.ru';
 
     public static $phones = [
-        '+7(909)999-39-90', '+7(906)626-51-45'
+        '+7(909)626-51-45', '+7(965)125-80-80'
     ];
     public static  $services = [
         'car_repair' => 'Кузовной ремонт',
