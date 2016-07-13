@@ -11,7 +11,7 @@
 	</div>
 
 	<div id="map" class="popup" style="width: 800px; margin-left: -400px; top: 10%;">
-		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Ng86sVakWqm2peB6kiAyGdSzUe0-NVUA&width=800&height=720&lang=ru_RU&sourceType=constructor"></script>
+		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=OklSB4HEyZ5MTFykxA-WsjzVpfvKg6S0&width=800&height=720&lang=ru_RU&sourceType=constructor"></script>
 	</div>
 	
 	<table id="header_top">
