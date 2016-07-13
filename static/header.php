@@ -32,7 +32,7 @@
 				<td><div id="logo" onclick="goHome();"></div></td>
 				<td id="mails">
 					<?= App::COMPANY_EMAIL ?><br>
-					<a onclick="showMap();">г. Пушкино, ул. Лермонтова, 37-а («Росгеология»)</a>
+					<a onclick="showMap();">г. Пушкино, ул. Лермонтова, 37-а</a>
 				</td>
 			</tr>
 		</tbody>
