@@ -1,7 +1,7 @@
 <?php
 class App {
     const COMPANY_NAME = 'АвтоМоторс-50';
-    const DEFAULT_TITLE = 'Атосервис г. Пушкино';
+    const DEFAULT_TITLE = 'Автосервис г. Пушкино';
     const COMPANY_EMAIL = 'zhora.cejba@mail.ru';
 
     public static $phones = [
@@ -34,7 +34,7 @@ class App {
         if(!empty(self::$pages[$current_page])) {
             return self::$pages[$current_page];
         }
-        return 'Атосервис г. Пушкино';
+        return 'Автосервис г. Пушкино';
     }
 
 }
