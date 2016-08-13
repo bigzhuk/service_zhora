@@ -9,7 +9,6 @@
 			}
 		}
 	}
-
 	if ($redirect !== ''){
 		if (file_exists('pages'.$redirect.'.php')){
 			include 'pages'.$redirect.'.php';

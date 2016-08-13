@@ -59,6 +59,9 @@
 				<div class="menu_section">
 					<a class="main_menu_link" href="/contacts">Контакты</a>
 				</div>
+				<div class="menu_section">
+					<a class="main_menu_link" href="/otzivy">Отзывы</a>
+				</div>
 
 			</center>
 		
