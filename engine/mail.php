@@ -1,12 +1,6 @@
 
 <?php
 
-// $mailSMTP = new SendMailSmtpClass();
-
-function sendMail($mail_to, $subject, $message){
-    global $mailSMTP;
-    $mailSMTP->send($mail_to, $subject, $message);
-}
 
 /**
 * SendMailSmtpClass
@@ -37,7 +31,7 @@ class SendMailSmtpClass {
     public $smtp_port;
     public $smtp_charset;
     
-    public function __construct($smtp_username = 'design@spartak.ru', $smtp_password = '192168cocacola', $smtp_host = 'ssl://smtp.yandex.ru', $smtp_from = 'Asfaltkroshka.ru', $smtp_port = 465, $smtp_charset = "utf-8") {
+    public function __construct($smtp_username = 'design@spartak.ru', $smtp_password = '192168cocacola', $smtp_host = 'ssl://smtp.yandex.ru', $smtp_from = 'robot@avtomotors.ru', $smtp_port = 465, $smtp_charset = "utf-8") {
         $this->smtp_username = $smtp_username;
         $this->smtp_password = $smtp_password;
         $this->smtp_host = $smtp_host;
@@ -63,7 +57,7 @@ class SendMailSmtpClass {
 
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n"; // кодировка письма
-        $headers .= "From: Dadget Service <design@spartak.ru>\r\n"; // от кого письмо
+        $headers .= "From: Avtomotors-50.ru <robot@avtomotors-50.ru>\r\n"; // от кого письмо
 
         $contentMail .= $headers . "\r\n";
         $contentMail .= $message . "\r\n";

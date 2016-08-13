@@ -1,6 +1,3 @@
-<?php include('engine/mysql.php'); ?>
-<?php include('engine/config.php'); ?>
-<?php include('engine/engine.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

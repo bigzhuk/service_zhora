@@ -92,8 +92,6 @@
 		var phone = $('#phone').val();
 		var name = $('#name').val();
 
-		alert(phone);
-
 		$('#recall_btn').prop('disabled', 'disabled');
 		$.ajax({
 			url: 'engine/ajax.php',

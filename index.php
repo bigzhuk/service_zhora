@@ -1,5 +1,4 @@
 <?php include('engine/app.php'); ?>
-<?php include('engine/ajax.php'); ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>

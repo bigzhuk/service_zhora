@@ -8,6 +8,7 @@ class News {
      */
     const RESULT_SUCCESS = 1;
     const RESULT_ERROR = 2;
+    const RESULT_VALIDATE_ERROR = 3;
 
     /**
      * Действия
@@ -80,10 +81,55 @@ class News {
         '<script>
             $(document).ready(function() {
                 $("#sendOtziv").on("click", function () {
-                    alert("a");
+                    otziv();
                 });         
             });
+            function otziv(){
+                var title = $("#title").val();
+		        var full_text = $("#full_text").val();
+		        var validate_error = false;
+		        
+		        if (title == "") {
+		            $("#title").css({"border" : "1px solid red"});
+		            validate_error = true;
+		        } else {
+		             $("#title").css({"border" : "1px solid black"});
+		        }
+		      
+		        if (full_text == "") {
+		            $("#full_text").css({"border" : "1px solid red"});
+		            validate_error = true;
+		        } else {
+		             $("#full_text").css({"border" : "1px solid black"});
+		        }
+		        
+		        if (validate_error == true) {
+		            return;
+		        }
+		        
+                $.ajax({
+                    url: \'engine/ajax.php\',
+                    type: \'POST\',
+                    dataType: \'json\',
+                    data: {action: \'otziv\', title: title, full_text: full_text},
+                })
+                .done(function(data) {
+                    alert("отзыв отправлен");
+                });
+	}
         </script>';
+    }
+
+    public function addOtzivByAjax() {
+        $title = $_POST['title'];
+        $full_text = $_POST['full_text'];
+        if (!$this->validate($title, $full_text)) {
+            return self::RESULT_VALIDATE_ERROR;
+        }
+        if ($this->getNewsModel()->addNew($title, $full_text, date('Y-m-d'), 0)) {
+            return self::RESULT_SUCCESS;
+        }
+        return self::RESULT_ERROR;
     }
 
     /**
@@ -92,6 +138,10 @@ class News {
     public function actionAdd() {
         $out = $this->getNewsDecorator()->renderNewEditForm();
         echo $out;
+    }
+
+    public function validate($title, $full_text) {
+        return !empty($title) && !empty($full_text);
     }
 
     /**
@@ -190,13 +240,5 @@ class News {
         window.location.replace("'.$url.'");
         </script>';
     }
-
-    public function validate() {
-        return true;
-        //todo валидация отзывов
-    }
-
-
-
 
 }
