@@ -114,7 +114,9 @@ class News {
                     data: {action: \'otziv\', title: title, full_text: full_text},
                 })
                 .done(function(data) {
-                    alert("отзыв отправлен");
+                     $("#title").val("");
+                     $("#full_text").val("");
+                     $("#otziv_message").text("Отзыв отправлен и будет опубликован на сайте в ближайшее время.");
                 });
 	}
         </script>';

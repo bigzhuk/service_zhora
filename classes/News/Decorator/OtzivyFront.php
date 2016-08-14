@@ -24,6 +24,7 @@ class OtzivyFront extends News {
         $full_text = isset($row_new['full_text']) ? $row_new['full_text'] : '';
         $out = '';
         $out.= '    <br/><div>';
+            $out.= '<div id="otziv_message" style="text-align: center; color: #e19109"></div>';
             $out.= '<div><strong>Имя пользователя:</strong> <input id="title" type="text" name="title" value="'.$title.'"></div>';
             $out.= '<div style="margin: 10px 17px 10px 11px;"><textarea id="full_text" style="width: 100%" name="full_text" rows="8">'.$full_text.'</textarea></div>';
             $out.= '<div><input type="button" name="sendOtziv" id="sendOtziv" value="Отправить"></div>';
