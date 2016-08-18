@@ -5,9 +5,12 @@
 	<script>console.groupCollapsed('Загрузка');</script>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<meta charset="UTF-8">
-	<title><?= App::getPageTitle(); ?></title>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<title><?= App::getPageInfo('title');?></title>
+	<meta name="description" content="<?= App::getPageInfo('description');?>" />
+	<meta name="keywords" content="<?= App::getPageInfo('keywords');?>" />
+	<meta name="title" content="<?= App::getPageInfo('title');?>" />
 
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 
 	<link rel="stylesheet/less" href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/style/style.less?q='.rand(1, 9999);?>">

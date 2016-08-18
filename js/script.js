@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	scrollPage();
 	$(window).on('scroll', scrollPage);
+	subMenu();
 });
 
 function scrollPage(){
@@ -10,4 +11,13 @@ function scrollPage(){
 	} else {
 		$('#header_bottom').removeClass('attached');
 	}
+}
+
+function subMenu() {
+	$('.main_menu_link').parent().on('mouseover', function() {
+		$(this).children('.sub_menu_link').css("display","block");
+	});
+	$('.main_menu_link').parent().on('mouseout', function() {
+		$(this).children('.sub_menu_link').css("display","none");
+	});
 }

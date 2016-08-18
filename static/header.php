@@ -46,6 +46,12 @@
 
 				<div class="menu_section">
 					<a class="main_menu_link" href="/service">Услуги</a>
+					<a class="sub_menu_link" style="display: none; text-align: left;" href="/service/car_repair"><span style="padding-left:15px">Кузовной ремонт<span></a>
+					<a class="sub_menu_link" style="display: none; text-align: left;" href="/service/engine_repair"><span style="padding-left:15px">Ремонт двигателя</span></a>
+					<a class="sub_menu_link" style="display: none; text-align: left;"" href="/service/gear_repair"><span style="padding-left:15px">Ремонт КПП</span></a>
+					<a class="sub_menu_link" style="display: none; text-align: left;"" href="/service/electrics_repair"><span style="padding-left:15px">Ремонт электрики<span></a>
+					<a class="sub_menu_link" style="display: none; text-align: left;"" href="/service/tyres_service"><span style="padding-left:15px">Шиномонтаж</span></a>
+					<a class="sub_menu_link" style="display: none; text-align: left;"" href="/service/evacuator"><span style="padding-left:15px">Эвакуатор</span></a>
 				</div>
 
 				<div class="menu_section">
