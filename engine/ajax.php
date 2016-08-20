@@ -9,8 +9,8 @@ require_once('../classes/autoload.php');
 		$result = addNewOtziv();
 		if ($result === News\Controller\News::RESULT_SUCCESS) {
 			$subject = 'Новый отзыв на сайте avtomotors-50.ru';
-			$message = '<a href="http://service_zhora.dev/admin/otzivy.php">Радектировать отзывы</a>';
-			App::sendMail($subject, $message);
+			$message = '<a href="http://'.$_SERVER['HTTP_HOST'].'/admin/otzivy.php">Радектировать отзывы</a>';
+			\Mail\Mail::sendMail($subject, $message);
 		}
 		echo json_encode($result);
 	}
@@ -28,7 +28,7 @@ function recall() {
 	$message = 'Обратный звонок от пользователя avtomotors-50.ru<br>
 		Имя: '.$name.'<br>
 		Тел.: '.$phone;
-	App::sendMail($subject, $message);
+	\Mail\Mail::sendMail($subject, $message);
 
 	$result['success'] = 'mail';
 	return $result;
