@@ -1,6 +1,5 @@
 <?php
 require_once('../classes/autoload.php');
-include('mail.php');
 	if ($_POST['action'] === 'recall') { // обратный звонок
 		$result = recall();
 		echo json_encode($result);
@@ -9,11 +8,9 @@ include('mail.php');
 	if ($_POST['action'] === 'otziv') {
 		$result = addNewOtziv();
 		if ($result === News\Controller\News::RESULT_SUCCESS) {
-			$mailto = 'bigzhuk@ya.ru';
 			$subject = 'Новый отзыв на сайте avtomotors-50.ru';
 			$message = '<a href="http://service_zhora.dev/admin/otzivy.php">Радектировать отзывы</a>';
-			$mailer = new SendMailSmtpClass();
-			$mailer->send($mailto, $subject, $message);
+			App::sendMail($subject, $message);
 		}
 		echo json_encode($result);
 	}
@@ -27,20 +24,13 @@ function recall() {
 		return $result;
 	}
 
-	$mailto = 'bigzhuk@ya.ru';
 	$subject = 'Обратный звонок';
 	$message = 'Обратный звонок от пользователя avtomotors-50.ru<br>
 		Имя: '.$name.'<br>
 		Тел.: '.$phone;
+	App::sendMail($subject, $message);
 
-	$mailer = new SendMailSmtpClass();
-	if ($mailer->send($mailto, $subject, $message)){
-		$result['success'] = 'sendMail';
-	} else if (mail($mailto, $subject, $message)){
-		$result['success'] = 'mail';
-	} else {
-		$result['error'] = 'recall';
-	}
+	$result['success'] = 'mail';
 	return $result;
 }
 

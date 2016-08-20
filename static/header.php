@@ -107,7 +107,6 @@
 			data: {action: 'recall', phone: phone, name: name},
 		})
 		.done(function(data) {
-			console.log(data);
 			$('#recall_btn').prop('disabled', false);
 			$('#recall_form').fadeOut(500);
 			$('#recall_success').fadeIn(500);
