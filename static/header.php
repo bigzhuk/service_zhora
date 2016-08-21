@@ -59,7 +59,7 @@
 				</div>
 
 				<div class="menu_section">
-					<a class="main_menu_link" href="/price_list">Прайс-лист</a>
+					<a class="main_menu_link" href="/price_list">Цены</a>
 				</div>
 
 				<div class="menu_section">
