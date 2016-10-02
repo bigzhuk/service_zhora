@@ -2,7 +2,7 @@
 class App {
     const COMPANY_NAME = 'АвтоМоторс-50';
     const DEFAULT_TITLE = 'Автосервис г. Пушкино';
-    const COMPANY_EMAIL = 'zhora.cejba@mail.ru';
+    const COMPANY_EMAIL = 'avto.motors-50@yandex.ru';
 
     public static $phones = [
         '+7(909)626-51-45', '+7(965)125-80-80'

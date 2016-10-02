@@ -42,7 +42,7 @@
 </div>
 <div class="container">
 	<p>Ниже вы сможете ознакомиться с ценами на любые виды ремонта и сервисных работ в нашем автосервисе.</p>
-	<p><a href="service/tyres_service">Цены на шиномонтаж</a>, а также <a href="service/tyres_service">цены на услуги эвакуатара и грузоперевозки</a>
+	<p><a href="service/tyres_service">Цены на шиномонтаж</a>, а также <a href="service/evacuator">цены на услуги эвакуатара и грузоперевозки</a>
 	представлены на соотвествующих страницах сайта.</p>
 	<div id="pricelist_wrapper">
 		<table id="pricelist">
@@ -58,30 +58,16 @@
 			<tr><td id="car_repair" colspan="100%" class="subhead"><?= App::$services['car_repair']?></td></tr>
 			<tr>
 				<td>
-					Покарска детали
+					Покраска детали
 				</td>
 				<td>
-					100
+					от 4500
 				</td>
 				<td>
-					100
+					от 4500
 				</td>
 				<td>
-					100
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Покарска детали
-				</td>
-				<td>
-					100
-				</td>
-				<td>
-					100
-				</td>
-				<td>
-					100
+					от 4500
 				</td>
 			</tr>
 			<tr><td id="engine_repair" colspan="100%" class="subhead"><?= App::$services['engine_repair']?></td></tr>

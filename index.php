@@ -16,7 +16,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/js/script.js';?>"></script>
 
 
 </head>

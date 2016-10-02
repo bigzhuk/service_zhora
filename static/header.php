@@ -71,6 +71,9 @@
 				<div class="menu_section">
 					<a class="main_menu_link" href="/otzivy">Отзывы</a>
 				</div>
+				<div class="menu_section">
+					<a class="main_menu_link" href="/vacansy">Вакансии</a>
+				</div>
 
 			</center>
 		
