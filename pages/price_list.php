@@ -1243,7 +1243,7 @@
 			<tr><td id="electrics_repair" colspan="100%" class="subhead"><?= App::$services['electrics_repair']?></td></tr>
 			<tr>
 				<td>
-					Покарска детали
+					Исправление неисправностей
 				</td>
 				<td>
 					от 1000
