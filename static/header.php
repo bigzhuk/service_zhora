@@ -69,21 +69,27 @@
 
 	<div id="header_bottom">
 
+
 		<div id="main_menu">	
-
-			<center>
-
+			
 				<div class="menu_section">
-					<a class="main_menu_link" href="/service">Услуги</a>
-					<a class="sub_menu_link" style="display: none; text-align: left;" href="/service/car_repair"><span style="padding-left:15px">Кузовной ремонт<span></a>
-					<a class="sub_menu_link" style="display: none; text-align: left;" href="/service/engine_repair"><span style="padding-left:15px">Ремонт двигателя</span></a>
-					<a class="sub_menu_link" style="display: none; text-align: left;"" href="/service/gear_repair"><span style="padding-left:15px">Ремонт КПП</span></a>
-					<a class="sub_menu_link" style="display: none; text-align: left;"" href="/service/electrics_repair"><span style="padding-left:15px">Ремонт электрики</span></a>
-					<a class="sub_menu_link" style="display: none; text-align: left;"" href="/service/tyres_service"><span style="padding-left:15px">Шиномонтаж</span></a>
-					<a class="sub_menu_link" style="display: none; text-align: left;"" href="/service/evacuator"><span style="padding-left:15px">Эвакуатор</span></a>
-					<a class="sub_menu_link" style="display: none; text-align: left;"" href="/service/diagnostics"><span style="padding-left:15px">Диагностика</span></a>
-					<a class="sub_menu_link" style="display: none; text-align: left;"" href="/service/suspension"><span style="padding-left:15px">Ремонт подвески</span></a>
-					<a class="sub_menu_link" style="display: none; text-align: left;"" href="/service/to"><span style="padding-left:15px">Техобслуживание</span></a>
+					<a class="main_menu_link" style="width: 200px;" href="/service">Услуги</a>
+					<?php
+					if (!App::isMainPage()) {
+						echo '
+						<a class="sub_menu_link" style="display: none; text-align: left; font-size: 20px;" href="/service/car_repair"><span style="padding-left:15px">Кузовной ремонт<span></a>
+						<a class="sub_menu_link" style="display: none; text-align: left; font-size: 20px;" href="/service/engine_repair"><span style="padding-left:15px">Ремонт двигателя</span></a>
+						<a class="sub_menu_link" style="display: none; text-align: left; font-size: 20px;" href="/service/gear_repair"><span style="padding-left:15px">Ремонт КПП</span></a>
+						<a class="sub_menu_link" style="display: none; text-align: left; font-size: 20px;" href="/service/electrics_repair"><span style="padding-left:15px">Ремонт электрики</span></a>
+						<a class="sub_menu_link" style="display: none; text-align: left; font-size: 20px;" href="/service/tyres_service"><span style="padding-left:15px">Шиномонтаж</span></a>
+						<a class="sub_menu_link" style="display: none; text-align: left; font-size: 20px;" href="/service/evacuator"><span style="padding-left:15px">Эвакуатор</span></a>
+						<a class="sub_menu_link" style="display: none; text-align: left; font-size: 20px;" href="/service/diagnostics"><span style="padding-left:15px">Диагностика</span></a>
+						<a class="sub_menu_link" style="display: none; text-align: left; font-size: 20px;" href="/service/suspension"><span style="padding-left:15px">Ремонт подвески</span></a>
+						<a class="sub_menu_link" style="display: none; text-align: left; font-size: 20px;" href="/service/to"><span style="padding-left:15px">Техобслуживание</span></a>
+						<a class="sub_menu_link" style="display: none; text-align: left; font-size: 20px;" href="/service/insurance"><span style="padding-left:15px">Автострахование</span></a>
+						<a class="sub_menu_link" style="display: none; text-align: left; font-size: 20px;" href="/service/truck_repair"><span style="padding-left:15px">Ремонт грузовиков</span></a>
+						';
+					} ?>
 				</div>
 
 				<div class="menu_section">
@@ -102,10 +108,7 @@
 				</div>
 				<div class="menu_section">
 					<a class="main_menu_link" href="/vacansy">Вакансии</a>
-				</div>
-
-			</center>
-		
+				</div>	
 		</div>
 		
 	</div>
