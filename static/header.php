@@ -60,7 +60,7 @@
 				</script>
 				<td><div id="logo" onclick="goHome();"></div></td>
 				<td id="mails">
-					<?= App::COMPANY_EMAIL ?><br>
+					<a class="mail_link" href="mailto:<?= App::COMPANY_EMAIL ?>"><?= App::COMPANY_EMAIL ?></a><br>
 					<a onclick="showMap();">г. Пушкино, ул. Лермонтова, 37-а</a>
 				</td>
 			</tr>
