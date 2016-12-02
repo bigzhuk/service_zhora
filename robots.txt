@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /index.php
+Disallow: /webstat
+Disallow: /admin
+Disallow: /classes
+Disallow: /engine
+
+Host: avtomotors-50.ru
+
+Sitemap: http://avtomotors-50.ru/sitemap.xml
