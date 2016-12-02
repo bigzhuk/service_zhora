@@ -2,7 +2,9 @@
 
 namespace News\Controller;
 
-class News {
+use Framework\Controller\Index;
+
+class News extends Index {
     /**
      * Типы результата
      */
@@ -84,7 +86,7 @@ class News {
                     otziv();
                 });         
             });
-            function otziv(){
+            function otziv() {
                 var title = $("#title").val();
 		        var full_text = $("#full_text").val();
 		        var validate_error = false;
@@ -219,21 +221,7 @@ class News {
         echo $out;
 
     }
-
-    public function run() {
-        if(!isset($_GET['action']) || empty($_GET['action'])) {
-            $this->actionIndex();
-            return null;
-        }
-        $method = 'action'.ucfirst($_GET['action']);
-        if(method_exists($this, $method)) {
-            $this->$method();
-        }
-        else {
-            $this->actionIndex();
-        }
-    }
-
+    
     public function redirectToIndex($action, $result, $error_reason_code = null) {
         $url = 'http://'.$_SERVER['HTTP_HOST'].'/admin/otzivy.php?msg_action='.$action.'&msg_result='.$result;
         $url.= !is_null($error_reason_code) ? '&msg_err_reason='.$error_reason_code : '';

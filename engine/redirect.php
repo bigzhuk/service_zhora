@@ -4,7 +4,7 @@
 
 
 	$redirect = '';
-	if (isset($_SERVER['REQUEST_URI'])){
+	if (isset($_SERVER['REQUEST_URI'])) {
 		$redirect_ = explode('/', $_SERVER['REQUEST_URI']);
 		foreach ($redirect_ as $key => $value) {
 			if ($value !== ''){
@@ -26,7 +26,7 @@
 			include 'pages/error404.php';
 		}
 	} else {
-		include 'pages/service.php';
+		include 'pages/main.php';
 	}
 	
 ?>
