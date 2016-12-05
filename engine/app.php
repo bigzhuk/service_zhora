@@ -5,7 +5,7 @@ class App {
     const COMPANY_EMAIL = 'avto.motors-50@yandex.ru';
 
     public static $phones = [
-        '<a class="none_decorated_link" href="tel:+79096265145">+7(909)626-51-45</a>', '<a class="none_decorated_link" href="tel:+79651258080">+7(965)125-80-80</a>'
+        '<a class="none_decorated_yellow_link" href="tel:+79096265145">+7(909)626-51-45</a>', '<a class="none_decorated_yellow_link" href="tel:+79651258080">+7(965)125-80-80</a>'
     ];
     public static  $services = [
         'car_repair' => 'Кузовной ремонт',

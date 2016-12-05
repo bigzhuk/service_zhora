@@ -12,9 +12,14 @@
 			<tr>
 				<td>Адрес:</td><td>141207, МО, г. Пушкино, ул. Лермонтова, 37-а («Росгеология»)</td>
 			</tr>
-
 			<tr>
 				<td>Электронная почта:</td><td><?= App::COMPANY_EMAIL?></td>
+			</tr>
+			<tr>
+				<td>Группа в VK:</td><td><a href="https://vk.com/public131730975" target="_blank">https://vk.com/public131730975</a></td>
+			</tr>
+			<tr>
+				<td>Реквизиты:</td><td></td>
 			</tr>
 		</table>
 		<br/>
