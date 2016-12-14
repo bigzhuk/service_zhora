@@ -13,48 +13,48 @@
     <div id="services_wrapper">
         <ul id="services">
 
-            <a href="service/car_repair">
+            <a href="service/car_repair/">
                 <div class="image image1"></div>
                 <div class="text"><?= App::$services['car_repair']?></div>
             </a>
 
-            <a href="service/engine_repair">
+            <a href="service/engine_repair/">
                 <div class="image image2"></div>
                 <div class="text"><?= App::$services['engine_repair']?></div>
             </a>
-            <a href="service/gear_repair">
+            <a href="service/gear_repair/">
                 <div class="image image3"></div>
                 <div class="text"><?=App::$services['gear_repair']?></div>
             </a>
-            <a href="service/electrics_repair">
+            <a href="service/electrics_repair/">
                 <div class="image image4"></div>
                 <div class="text"><?=App::$services['electrics_repair']?></div>
             </a>
-            <a href="service/tyres_service">
+            <a href="service/tyres_service/">
                 <div class="image image5" ></div>
                 <div class="text"><?=App::$services['tyres_service']?></div>
             </a>
-            <a href="service/evacuator">
+            <a href="service/evacuator/">
                 <div class="image image6"></div>
                 <div class="text"><?=App::$services['evacuator']?></div>
             </a>
-            <a href="service/diagnostics">
+            <a href="service/diagnostics/">
                 <div class="image image7"></div>
                 <div class="text"><?=App::$services['diagnostics']?></div>
             </a>
-            <a href="service/suspension">
+            <a href="service/suspension/">
                 <div class="image image8"></div>
                 <div class="text"><?=App::$services['suspension']?></div>
             </a>
-            <a href="service/to">
+            <a href="service/to/">
                 <div class="image image9"></div>
                 <div class="text"><?=App::$services['to']?></div>
             </a>
-            <a href="service/insurance">
+            <a href="service/insurance/">
                 <div class="image image10"></div>
                 <div class="text"><?=App::$services['insurance']?></div>
             </a>
-            <a href="service/truck_repair">
+            <a href="service/truck_repair/">
                 <div class="image image11"></div>
                 <div class="text"><?=App::$services['truck_repair']?></div>
             </a>

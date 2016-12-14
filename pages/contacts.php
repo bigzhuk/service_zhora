@@ -1,7 +1,6 @@
 <h1>Контакты</h1>
 
 <div class="container">
-	<article itemscope itemtype="http://schema.org/Article" id="main_content">
 	<div itemscope itemtype="http://schema.org/Organization" align="center">
 		<div class="table">
 			<div class="row">
@@ -10,7 +9,7 @@
 			</div>
 			<div class="row">
 				<div class="cell left_light_gray_border top_light_gray_border">Адрес:</div>
-				<div class="cell both_horizontal_light_gray_border top_light_gray_border">
+				<div class="cell both_horizontal_light_gray_border top_light_gray_border" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 					<span itemprop="postalCode">141207</span>,
 					<span itemprop="addressLocality">Россиия, МО, г. Пушкино</span>,
 					<span itemprop="streetAddress">ул. Лермонтова, д. 37-а</span>(«Росгеология»)
@@ -19,8 +18,8 @@
 			<div class="row">
 				<div class="cell left_light_gray_border both_vertical_light_gray_border">Телефон:</div>
 				<div class="cell both_horizontal_light_gray_border both_vertical_light_gray_border">
-					<?= App::$phones[0]?>,
-					<?= App::$phones[1]?>
+					<span itemprop="telephone">+7(909)626-51-45</span>,
+					<span itemprop="telephone">+7(965)125-80-80</span>
 				</div>
 			</div>
 			<div class="row">
@@ -32,7 +31,7 @@
 			<div class="row">
 				<div class="cell left_light_gray_border both_vertical_light_gray_border">Электронная почта:</div>
 				<div class="cell both_horizontal_light_gray_border both_vertical_light_gray_border">
-					<?= App::COMPANY_EMAIL ?>
+					<span itemprop="email">avto.motors-50@yandex.ru</span>
 				</div>
 			</div>
 			<div class="row">
@@ -58,5 +57,4 @@
 			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=OklSB4HEyZ5MTFykxA-WsjzVpfvKg6S0&width=800&height=720&lang=ru_RU&sourceType=constructor"></script>
 		</div>
 	</div>
-	</article>
 </div>

@@ -42,7 +42,7 @@
 </div>
 <div class="container">
 	<p>Ниже вы сможете ознакомиться с ценами на любые виды ремонта и сервисных работ в нашем автосервисе.</p>
-	<p><a href="service/tyres_service">Цены на шиномонтаж</a>, а также <a href="service/evacuator">цены на услуги эвакуатара и грузоперевозки</a>
+	<p><a href="service/tyres_service/">Цены на шиномонтаж</a>, а также <a href="service/evacuator/">цены на услуги эвакуатара и грузоперевозки</a>
 	представлены на соотвествующих страницах сайта.</p>
 	<div id="pricelist_wrapper">
 		<table id="pricelist">
