@@ -5,7 +5,9 @@
 		<div class="table">
 			<div class="row">
 				<div class="cell left_light_gray_border top_light_gray_border">Наименование организации:</div>
-				<div class="cell both_horizontal_light_gray_border top_light_gray_border"><span itemprop="name">ООО «Автомоторс-50»<span itemprop="name"></div>
+				<div class="cell both_horizontal_light_gray_border top_light_gray_border">
+					<span itemprop="name">ООО «Автомоторс-50»</span>
+				</div>
 			</div>
 			<div class="row">
 				<div class="cell left_light_gray_border top_light_gray_border">Адрес:</div>
