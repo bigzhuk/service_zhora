@@ -3,6 +3,6 @@
 			<span class="yellow">Copyright © <?= date('Y')?> Автосервис в Пушкино "<?= App::COMPANY_NAME; ?>";</span>
 			<span class="yellow">тел.:<?= App::$phones[0];?>,<?= App::$phones[1];?>;</span>
 		    <span class="yellow">email:<?= App::COMPANY_EMAIL;?>;</span>
-			<span><a class="none_decorated_yellow_link" href="/sitemap.xml" >карта сайта.</a></span>
+			<span><a class="none_decorated_yellow_link" href="/sitemap" >карта сайта.</a></span>
 		</div>
 </div>
