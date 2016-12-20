@@ -141,7 +141,10 @@ class App {
 
     public static function getPageInfo($keyword) {
         $current_page = $_SERVER['REQUEST_URI'];
-        if(!empty(self::$pages[$current_page][$keyword])) {
+        if ($current_page !== '/' && substr($current_page, -1) == '/') {
+            $current_page = substr($current_page,  0, (strlen($current_page) - 1));
+        }
+        if (!empty(self::$pages[$current_page][$keyword])) {
             return self::$pages[$current_page][$keyword];
         }
         return self::$pages['error404'][$keyword];
